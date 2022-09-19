@@ -18,12 +18,12 @@ submit.addEventListener("click", (e) => {
     alert("You should enter a number");
   } else {
     if (input.value == secretNumber) {
-      right -= 1;
       resP.innerHTML = `Awesome, You <span>knew <i class="fa-regular fa-face-smile icon"></i></span>`;
       knewRes.innerHTML = `Score : ${right} point`;
       secret.innerHTML = secretNumber;
       submit.disabled = true;
       input.value = "";
+      right -= 1;
     } else if (input.value > secretNumber) {
       right -= 1;
       resP.innerHTML = `You should <span>decrease <i class="fa-solid fa-arrow-down icon"></i></span>`;
@@ -40,7 +40,7 @@ submit.addEventListener("click", (e) => {
       input.focus();
     }
   }
-  if (right === 0) {
+  if (right < 0) {
     resP.innerHTML = `Unfortunately, You <span>didn't knew <i class="fa-regular fa-face-frown icon"></i></span>`;
     knewRes.innerHTML = `It's not your lucky day.`;
     secret.innerHTML = secretNumber;
