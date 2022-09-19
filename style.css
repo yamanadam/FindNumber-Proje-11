@@ -123,4 +123,10 @@ span {
   .number input {
     width: 8rem;
   }
+  .secret {
+    font-size: 15px;
+  }
+  .footer p {
+    padding-bottom: 2rem;
+  }
 }
