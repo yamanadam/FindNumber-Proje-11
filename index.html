@@ -32,14 +32,17 @@
             <input type="number" name="number" id="number" />
           </div>
           <div>
-            <button type="submit" class="submit" id="Submit">SUBMİT</button>
+            <button type="submit" class="submit" id="submit">CHECK</button>
+            <button class="submit" id="restart">RESTART</button>
           </div>
-          <ul class="res" id="res"></ul>
+          <p class="res" id="res"></p>
         </form>
       </main>
 
       <footer>
-        <p>You have <span>10 rights </span> to find the number</p>
+        <p id="knewRes">
+          You have <span id="rightNumber">10</span> rights to find the number
+        </p>
         <br />
         <p>it is in the range of <span>0-100</span></p>
       </footer>
