@@ -3,3 +3,79 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.bg-image {
+  height: 100vh;
+  background-image: url(./img/pay-1036469_960_720.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+.container {
+  height: 80vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 7px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+}
+
+.header {
+  padding: 2rem;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+.number input {
+  width: 10rem;
+  height: 2.3rem;
+  font-size: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ccc;
+  color: red;
+  font-family: "Press Start 2P", cursive;
+}
+
+.submit {
+  width: 7rem;
+  height: 1.6rem;
+  border-radius: 15px;
+  background-color: #ccc;
+  font-weight: 700;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit:hover {
+  background-color: red;
+  color: white;
+  transform: scale(1.1);
+}
+
+.res {
+  height: 30vh;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+span {
+  color: red;
+}
